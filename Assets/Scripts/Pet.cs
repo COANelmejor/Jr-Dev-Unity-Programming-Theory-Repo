@@ -23,6 +23,7 @@ public abstract class Pet {
     }
 
     // Abstract methods to be overridden
+    public abstract void PetType();
     public abstract void Feed();
     public abstract void Play();
     public abstract void Sleep();
