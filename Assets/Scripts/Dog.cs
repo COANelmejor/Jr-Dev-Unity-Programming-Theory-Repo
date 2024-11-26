@@ -3,7 +3,7 @@ using UnityEngine;
 public class Dog : Pet {
 
     public override void PetType() {
-        Debug.Log("Hello dog");
+        Debug.Log($"Hello {DataManager.Instance.DogName} (Dog)");
     }
 
     public override void Feed() {

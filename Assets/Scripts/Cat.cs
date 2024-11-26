@@ -2,7 +2,7 @@ using UnityEngine;
 public class Cat : Pet {
 
     public override void PetType() {
-        Debug.Log("Hello cat");
+        Debug.Log($"Hello {DataManager.Instance.CatName} (Cat)");
     }
     public override void Feed() {
         HungerLevel -= 10;

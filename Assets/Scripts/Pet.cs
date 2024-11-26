@@ -22,9 +22,8 @@ public abstract class Pet {
         HappinessLevel = 50;
     }
 
-    public abstract void PetType();
-
     // Abstract methods to be overridden
+    public abstract void PetType();
     public abstract void Feed();
     public abstract void Play();
     public abstract void Sleep();

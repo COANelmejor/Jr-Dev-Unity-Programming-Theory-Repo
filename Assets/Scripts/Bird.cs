@@ -3,7 +3,7 @@ using UnityEngine;
 public class Bird : Pet {
 
     public override void PetType() {
-        Debug.Log("Hello bird");
+        Debug.Log($"Hello {DataManager.Instance.BirdName} (Bird)");
     }
     public override void Feed() {
         HungerLevel -= 5;
