@@ -11,6 +11,7 @@ public class GameController : MonoBehaviour {
     };
 
     void Start() {
+        DataManager.Instance.Load();
         // Instantiate a pet (e.g., Cat)
         currentPet = pets[0];
         currentPet.PetType();

@@ -1,15 +1,17 @@
 using UnityEngine;
 
-public class DataManager : MonoBehaviour
-{
+public class DataManager : MonoBehaviour {
     public static DataManager Instance { get; private set; }
 
-    private string m_catName;
-    private string m_dogName;
-    private string m_birdName;
+    [SerializeField]
+    private string m_catName = "Nyan";
+    [SerializeField]
+    private string m_dogName = "Bark";
+    [SerializeField]
+    private string m_birdName = "Chirp";
 
-    public string CatName { 
-        get { return m_catName; }
+    public string CatName {
+        get { return m_catName;  }
         set { m_catName = value; }
     }
     public string DogName {
@@ -44,6 +46,7 @@ public class DataManager : MonoBehaviour
             birdName = m_birdName
         };
         string json = JsonUtility.ToJson(data);
+        Debug.Log(string.Format("Saving: {0}", json));
         System.IO.File.WriteAllText(Application.persistentDataPath + "/savefile.json", json);
     }
 
