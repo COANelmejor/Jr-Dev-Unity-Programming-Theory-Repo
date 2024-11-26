@@ -1,5 +1,9 @@
 using UnityEngine;
 public class Cat : Pet {
+
+    public override void PetType() {
+        Debug.Log("Hello cat");
+    }
     public override void Feed() {
         HungerLevel -= 10;
         Debug.Log("The cat is eating fish.");

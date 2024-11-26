@@ -1,6 +1,11 @@
 using UnityEngine;
 
 public class Dog : Pet {
+
+    public override void PetType() {
+        Debug.Log("Hello dog");
+    }
+
     public override void Feed() {
         HungerLevel -= 15;
         Debug.Log("The dog is eating bones.");
